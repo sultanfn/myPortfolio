@@ -1,0 +1,235 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+}
+.red{
+    color: #dc3545;
+}
+.p5070{
+    padding: 5rem 0 7rem;
+}
+/* ******************************
+Header
+****************************** */
+header{
+    position: relative;
+}
+.header button{
+    background-color: #fff;
+}
+
+.navbar{
+    padding: 1.6rem 0;
+}
+.navbar-brand i{
+    padding-top: 1rem;
+}
+.navbar-brand h5{
+    font-size: 2rem;
+}
+
+.nav-item .nav-link{
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase !important;
+    border: 2px solid transparent;
+}
+.nav-item.active .nav-link, .nav-item .nav-link:hover {
+    color: #dc3545 !important;
+    border-bottom: 2px solid #f5ba09;
+    transition: 0.5s ease;
+}
+
+/* Sticky Nav  */
+.show-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #343A40;
+    z-index: 1;
+}
+/* My info */
+.myInfo h1{
+    font-size: 4.5rem;
+}
+.myInfo h4{
+    font-size: 2rem;
+}
+.myInfo h4 span {
+    color: #dc3545;
+}
+.my-btn{
+    display: inline-block;
+    padding: .8rem 2.5rem;
+    border: 2px solid #dc3545;
+    background: #dc3545;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.my-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.icons a:not(:last-child) {
+    margin-right: 1rem;
+}
+.icons i{
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    background:  #dc3545;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+.icons i:hover{
+    background: #000;
+}
+
+
+/* **************
+About Me
+**************** */
+.title{
+    position: relative;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    background-color:  #dd9a05;
+    width: 8%;
+    height: .4rem;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.aboutP{
+    color: #333;
+    line-height: 2;
+}
+.about-info .my-btn:hover{
+    color: #000;
+}
+
+/* Services */
+.service-box{
+    background: rgb(124, 119, 119);
+    padding: 2rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.service-box span{
+    color: #dc3545;
+    font-size: 4rem;
+    transition: all 300ms ease-in-out;
+}
+.service-box:hover{
+    background-color: #dc3545;
+}
+.service-box:hover span{
+    color: #fff;
+}
+/* Media Query */
+@media (max-width: 991px){
+    .service-box{
+        margin-bottom: 2rem;
+    }
+}
+
+/* My Skill */
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+  }
+  
+  svg.radial-progress circle {
+    fill: rgba(0,0,0,0);
+    stroke: #dc3545;
+    stroke-dashoffset: 219.91148575129; 
+    stroke-width: 10;
+  }
+  
+  svg.radial-progress circle.incomplete { opacity: 0.15; }
+  
+  svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+  
+  svg.radial-progress text {
+    fill: #333;
+    text-anchor: middle;
+  }
+
+/* Projects */
+.button-group button{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 3rem;
+
+}
+.button-group button:focus{
+    outline: none;
+}
+.projects .mixitup-control-active{
+    background-color: #dc3545;
+    padding: 1rem 2rem;
+}
+.card-title{
+    font-size: 1.8rem;
+}
+.card .my-btn:hover{
+    color: #000;
+}
+
+/* Contact me */
+.info-box span i{
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.form-control{
+    font-size: 1.5rem;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.contact form .my-btn:hover{
+    color: #333;
+}
