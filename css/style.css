@@ -16,21 +16,19 @@ body{
     padding: 5rem 0 7rem;
 }
 /* ******************************
-Header
+Navigation
 ****************************** */
-header{
-    position: relative;
-}
-.header button{
-    background-color: #fff;
-}
-
 .navbar{
-    padding: 1.6rem 0;
+    padding: 1rem 0;
 }
 .navbar-brand i{
     padding-top: 1rem;
 }
+
+.navbar button{
+    background-color: #fff;
+}
+
 .navbar-brand h5{
     font-size: 2rem;
 }
@@ -47,15 +45,6 @@ header{
     transition: 0.5s ease;
 }
 
-/* Sticky Nav  */
-.show-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #343A40;
-    z-index: 1;
-}
 /* My info */
 .myInfo h1{
     font-size: 4.5rem;
@@ -182,7 +171,8 @@ svg.radial-progress {
   
   svg.radial-progress circle {
     fill: rgba(0,0,0,0);
-    stroke: #dc3545;
+    /* stroke: #dc3545; */
+    stroke: #dd9a05;
     stroke-dashoffset: 219.91148575129; 
     stroke-width: 10;
   }
@@ -197,13 +187,18 @@ svg.radial-progress {
   }
 
 /* Projects */
+.button-group{
+    display: flex;
+    flex-direction: row;
+
+}
 .button-group button{
     background: transparent;
     border: none;
     text-transform: uppercase;
     color: #fff;
     margin-right: 3rem;
-
+    margin-bottom: 1rem;
 }
 .button-group button:focus{
     outline: none;
@@ -211,12 +206,23 @@ svg.radial-progress {
 .projects .mixitup-control-active{
     background-color: #dc3545;
     padding: 1rem 2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .card-title{
     font-size: 1.8rem;
 }
 .card .my-btn:hover{
     color: #000;
+}
+
+@media (max-width: 575px){
+    .button-group{
+        flex-direction: column;
+    }
 }
 
 /* Contact me */
