@@ -54,14 +54,6 @@ AOS.init();
 
 
 $(document).ready(function () {
-// Sticky menu
-// $(".sticky-nav").waypoint(function(direction){
-//   if(direction == "down"){
-//     $("nav").addClass("show-nav");
-//   }else{
-//     $("nav").removeClass("show-nav");
-//   }
-// });
 
 // Project
   var mixer = mixitup(".p-content");
