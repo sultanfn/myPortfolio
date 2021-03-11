@@ -7,10 +7,12 @@
     <meta name="keywords" content="Fariha Sultana, Web developer, Programmer, HTML5 Developer, Web Designer">
     <meta name="author" content="Fariha Sultana">
     <title>Fariha Sultana :: Front-end Web Developer, Get qualified service now!</title>
+    
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
@@ -19,7 +21,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>   
@@ -428,7 +429,33 @@
       <!-- MixitUp for project -->
       <script src="js/mixitup.min.js"></script>
     <!-- Custom Script -->
-    <script src="js/skills.js"></script>
+    <!-- <script src="js/skills.js"></script> -->
     <script src="js/index.js"></script>
+    <script>
+        $('svg.radial-progress').each(function( index, value ) { 
+    $(this).find($('circle.complete')).removeAttr( 'style' );
+  });
+
+  $(window).scroll(function(){
+    $('svg.radial-progress').each(function( index, value ) { 
+      // If svg.radial-progress is approximately 25% vertically into the window when scrolling from the top or the bottom
+      if ( 
+          $(window).scrollTop() > $(this).offset().top - ($(window).height() * 0.75) &&
+          $(window).scrollTop() < $(this).offset().top + $(this).height() - ($(window).height() * 0.25)
+      ) {
+          // Get percentage of progress
+          percent = $(value).data('percentage');
+          // Get radius of the svg's circle.complete
+          radius = $(this).find($('circle.complete')).attr('r');
+          // Get circumference (2πr)
+          circumference = 2 * Math.PI * radius;
+          // Get stroke-dashoffset value based on the percentage of the circumference
+          strokeDashOffset = circumference - ((percent * circumference) / 100);
+          // Transition progress for 1.25 seconds
+          $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 1250);
+      }
+    });
+  }).trigger('scroll');
+    </script>
 </body>
 </html>
