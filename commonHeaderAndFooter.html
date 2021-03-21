@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=">How to make a common header and footer for a website with many pages">
+    <meta name="keywords" content="Common header and footer, common header and footer for many html file">
+    <meta name="author" content="Fariha Sultana">
+    <title>How to make a common header and footer for a website with many pages</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Animate On Scroll -->   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>   
+    <!--  ======================= Start Header Area ============================== -->
+    <nav class="navbar navbar-expand-lg navbar-light px-3 bg-dark sticky-top" >
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code fa-2x red"></i>
+                <h5 class="text-white d-inline ps-2">Fariha</h5>
+            </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container blog">
+        <h1 class="text-center pt-5 b-heading">How to make a common header and footer for a website with many pages</h1>
+        <div class="row justify-content-center py-5">
+            <div class="col-md-8">
+                <p>As I’ve learned from designing many websites, making separate files for header and footer if you have more than one page makes you write less code and saves your time. <b>Follow below simple steps:</b></p>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <h2 class="pb-3 pt-5">1. Headers need to be in a separate file. For Example: header.html</h2>
+                        <img src="img/h.PNG" alt="">
+                    </li>
+                    <li>
+                        <h2 class="pt-5 pb-3">2. Footers need to be in a separate file. For example: footer.html</h2>
+                        <img src="img/f.PNG" alt="">
+                    </li>
+                    <li>
+                        <h2 class="pt-5 ">3. For Index.html, We need to add jQuery Plugin, div for header & footer, and load header and footer in a "script" tag.
+                        <h3 class="pt-3 pb-2">jQuery CDN link:</h3>
+                        <p>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js</p>
+
+                        <h3 class="pb-2">Div for header and footer:</h3>
+                        <img src="img/hAndF.PNG" alt="">
+
+                        <h3 class="pb-2 pt-4">Load header and Footer:</h3>
+                        <p>The "script" tag should put inside the "head" tag. Example of "script" tag:</p>
+                        <img src="img/script.PNG" alt="">
+                    </li>
+                </ul>
+
+                <p class="pt-5"><b>Note: </b> This common header and footer will not work on local machines. In order for it to work, we need to upload it on GitHub or any similar platform.</p>
+
+                <p class="conclusion"><strong>These simple steps will save you tons of time. Happy Coding!!!!!!!</strong></p>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-4">
+        <p class="text-center pb-0 px-2 text-white">Designed By <span class="red">Fariha Sultana</span> | &copy; 2021 All rights reserved.</p>
+      </footer>
+
+       <!-- Bootstrap JS -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+       <!-- JQUERY -->
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>   
+</html>
